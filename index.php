@@ -1,7 +1,5 @@
 <?php
 function scaricaImmagine($url, $proxy = null) {
-$url = "https://gosoccerboy5.github.io/view-images/#".$url;
-echo file_get_contents($url);exit;print_r($url);
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_REFERER, $url);
     curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36");
